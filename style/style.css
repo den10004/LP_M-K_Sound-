@@ -1,11 +1,11 @@
+@import "./header.css";
 @import "./modals.css";
 @import "./privacy.css";
 @import "./thanks.css";
 @import "./normalize.css";
 
 :root {
-    --color-active: #fdd803;
-
+    --color-white: #ffffff;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
     padding: 0;
     max-width: 100%;
     background: white;
-    font-family: "Onest", sans-serif;
+    font-family: "Montserrat", serif;
     box-sizing: border-box;
     overflow: auto
 }
@@ -31,4 +31,9 @@ html {
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+.layout {
+    width: 1500px;
+    margin: 0 auto;
 }

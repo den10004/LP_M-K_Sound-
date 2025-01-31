@@ -1,4 +1,4 @@
 # receivers
 
-[проект](https://github.com/den10004/receivers.git)
-[vercel](https://den10004.github.io/receivers/)
+[проект](https://github.com/den10004/LP_M-K_Sound-.git)
+[vercel]()
