@@ -1,6 +1,6 @@
 .header-layout {
     background-color: #342483;
-    background-image: url(./../images/bg.jpg);
+    background-image: url(./../images/bg.webp);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -240,7 +240,7 @@
 @media screen and (max-width: 900px) {
     .header__img>div>img {
         width: 464px;
-        right: -45px;
+        right: 0px;
         top: -331px;
     }
 }
@@ -249,6 +249,14 @@
 @media screen and (max-width: 800px) {
     .header__content>h1 {
         font-size: 100px;
+    }
+
+    .header__img>div>img {
+        right: 0px;
+    }
+
+    .header__content>p {
+        max-width: 300px;
     }
 }
 

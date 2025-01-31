@@ -1,0 +1,78 @@
+.sound {
+    margin-top: 160px;
+    position: relative;
+}
+
+.sound-down {
+    display: none;
+}
+
+.oscar-text {
+    margin-top: 32px;
+    width: 95%;
+}
+
+
+.oscar-statue {
+    width: 190px;
+    position: absolute;
+    top: -141px;
+    left: 946px;
+}
+
+@media screen and (max-width: 1400px) {
+    .sound {
+        margin-top: 110px;
+    }
+
+    .oscar-text {
+        width: 100%;
+    }
+
+    .oscar-statue {
+        width: 155px;
+        left: 733px;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .oscar-statue {
+        left: 533px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .oscar-statue {
+        width: 110px;
+        top: -80px;
+        left: auto;
+        right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .oscar-statue {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .oscar-statue {
+        width: 80px;
+    }
+
+    .sound-down {
+        display: block;
+    }
+
+    .sound-up>span {
+        display: none;
+    }
+
+    .oscar-text {
+        margin-top: 10px;
+    }
+}

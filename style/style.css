@@ -1,5 +1,6 @@
 @import "./header.css";
 @import "./studios.css";
+@import "./sound.css";
 @import "./modals.css";
 @import "./privacy.css";
 @import "./thanks.css";
@@ -74,6 +75,12 @@ button:active {
 }
 
 
+.font-span {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
 .layout {
     max-width: 1590px;
     padding: 0 20px;
@@ -86,6 +93,10 @@ button:active {
         max-width: 1195px;
     }
 
+    .font-headline {
+        font-size: 40px;
+    }
+
     .font-p {
         font-size: 20px;
     }
@@ -96,9 +107,25 @@ button:active {
         max-width: 808px;
     }
 
+    .font-headline {
+        font-size: 30px;
+    }
+
     .font-p {
         font-size: 18px;
     }
+}
+
+
+@media screen and (max-width: 767px) {
+    .font-headline {
+        font-size: 23px;
+    }
+
+    .font-span {
+        font-size: 14px;
+    }
+
 }
 
 
