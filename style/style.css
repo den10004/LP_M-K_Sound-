@@ -1,4 +1,5 @@
 @import "./header.css";
+@import "./studios.css";
 @import "./modals.css";
 @import "./privacy.css";
 @import "./thanks.css";
@@ -6,6 +7,9 @@
 
 :root {
     --color-white: #ffffff;
+    --color-btb-st: #e6181a;
+    --hover: #ff4142;
+    --active: #c41416;
 }
 
 body {
@@ -15,13 +19,13 @@ body {
     background: white;
     font-family: "Montserrat", serif;
     box-sizing: border-box;
-    overflow: auto
 }
 
+/*
 html {
     overflow: auto
 }
-
+*/
 * {
     margin: 0;
     padding: 0;
@@ -31,9 +35,79 @@ html {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: var(--color-white);
+}
+
+a:hover {
+    color: var(--hover)
+}
+
+a:active {
+    color: var(--active);
 }
 
 .layout {
-    width: 1500px;
+    max-width: 1500px;
     margin: 0 auto;
+}
+
+button {
+    background-color: var(--color-btb-st);
+}
+
+button:hover {
+    background-color: var(--hover);
+}
+
+button:active {
+    background-color: var(--active);
+}
+
+.font-headline {
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+.font-p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+
+.layout {
+    max-width: 1590px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .layout {
+        max-width: 1195px;
+    }
+
+    .font-p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .layout {
+        max-width: 808px;
+    }
+
+    .font-p {
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 340px) {
+    .layout {
+        width: 100%;
+    }
+
+    .font-p {
+        font-size: 16px;
+    }
 }
