@@ -3,6 +3,10 @@
 @import "./sound.css";
 @import "./swiper.css";
 @import "./monitors.css";
+@import "./article.css";
+@import "./banner.css";
+@import "./form.css";
+@import "./footer.css";
 @import "./modals.css";
 @import "./privacy.css";
 @import "./thanks.css";
@@ -15,6 +19,7 @@
     --active: #c41416;
     --text: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
+    --gray: #f2f5f9;
 }
 
 body {

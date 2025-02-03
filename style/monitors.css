@@ -178,13 +178,10 @@
     }
 
     .monitors__quote::before {
-        width: 55px;
-        height: 50px;
-    }
-
-    .monitors__quote::before {
         background-size: 84%;
         margin-right: 20px;
+        width: 30px;
+        height: 30px;
     }
 
     .monitors__about {
