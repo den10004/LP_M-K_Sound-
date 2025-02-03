@@ -1,6 +1,8 @@
 @import "./header.css";
 @import "./studios.css";
 @import "./sound.css";
+@import "./swiper.css";
+@import "./monitors.css";
 @import "./modals.css";
 @import "./privacy.css";
 @import "./thanks.css";
@@ -11,6 +13,8 @@
     --color-btb-st: #e6181a;
     --hover: #ff4142;
     --active: #c41416;
+    --text: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
 }
 
 body {
@@ -54,6 +58,9 @@ a:active {
 
 button {
     background-color: var(--color-btb-st);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 button:hover {

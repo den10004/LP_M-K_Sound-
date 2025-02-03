@@ -1,0 +1,260 @@
+.monitors {
+    margin-top: 145px;
+}
+
+.monitors__content {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.monitors__content>img {
+    width: 380px;
+    height: 100%;
+    margin-left: 120px;
+}
+
+
+.content__cont {
+    display: flex;
+    flex-direction: column;
+    max-width: 877px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding: 0 10px 0 20px;
+}
+
+.content__cont>h4 {
+    font-size: 48px;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.content__cont>p {
+    margin: 50px 0 70px 0;
+}
+
+.content__cont>span {
+    font-size: 36px;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.content__cont>button {
+    font-size: 26px;
+    color: var(--white);
+    font-weight: bold;
+    width: 390px;
+    height: 90px;
+    margin-top: 30px;
+}
+
+
+.monitors__quote {
+    position: relative;
+    display: flex;
+    font-size: 36px;
+    color: var(--text);
+    font-style: italic;
+    line-height: 1.222;
+    margin: 95px 0 57px 0;
+    width: 100%;
+}
+
+.monitors__quote::before {
+    background-image: url(./../images/quote.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 50px;
+    content: "";
+    margin-right: 55px;
+}
+
+.monitors__about {
+    font-size: 24px;
+    color: var(--text);
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: 100px;
+}
+
+
+.monitor-hr {
+    border: 1px solid #e0e6ec;
+    margin-top: 100px;
+}
+
+.monitors__quote>blockquote {
+    max-width: calc(100% - 110px);
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .monitors {
+        margin-top: 90px;
+    }
+
+    .content__cont>h4 {
+        font-size: 30px;
+    }
+
+    .content__cont {
+        max-width: 680px;
+    }
+
+    .monitors__content {
+        margin-top: 95px;
+    }
+
+    .monitors__content>img {
+        margin-left: 15px;
+    }
+
+    .content__cont>p {
+        margin: 20px 0 50px 0;
+        font-size: 15px !important;
+        line-height: 1.6;
+    }
+
+    .content__cont>span {
+        font-size: 23px;
+    }
+
+    .content__cont>button {
+        width: 290px;
+        height: 73px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .monitors__quote {
+        margin: 60px 0 0 0;
+        font-size: 22px;
+    }
+
+    .monitors__quote::before {
+        width: 55px;
+        height: 50px;
+        background-size: 100%;
+        margin-right: 50px;
+    }
+
+    .monitors__about {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .monitors {
+        margin-top: 35px;
+    }
+
+    .monitors__content {
+        margin-top: 50px;
+    }
+
+    .monitors__content>img {
+        width: 190px;
+    }
+
+    .content__cont {
+        max-width: 510px;
+    }
+
+    .content__cont>p {
+        margin: 16px 0 46px 0;
+    }
+
+    .content__cont>button {
+        width: 245px;
+        height: 60px;
+    }
+
+    .monitors__quote {
+        margin: 50px 0 30px;
+        font-size: 20px;
+    }
+
+    .monitors__quote::before {
+        width: 55px;
+        height: 50px;
+    }
+
+    .monitors__quote::before {
+        background-size: 84%;
+        margin-right: 20px;
+    }
+
+    .monitors__about {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .monitors__content>img {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .monitors__content {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .content__cont {
+        padding: 0;
+    }
+
+    .content__cont>h4 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .content__cont>p {
+        margin: 5px 0 25px 0;
+    }
+
+    .content__cont>span {
+        font-size: 18px;
+    }
+
+    .monitors__content>img {
+        width: 183px;
+        margin: 0 auto;
+    }
+
+    .monitors__quote {
+        font-size: 16px;
+        flex-direction: column;
+
+    }
+
+    .monitors__quote::before {
+        background-size: 43%;
+        margin-right: 0px;
+        width: 30px;
+        height: 16px;
+    }
+
+    .monitors__about {
+        margin-left: 0px;
+    }
+
+    .monitors__quote>blockquote {
+        max-width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .content__cont>button {
+        width: 100%;
+    }
+
+    .content__cont>p {
+        margin: 27px 0 25px 0;
+    }
+}

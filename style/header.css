@@ -319,6 +319,10 @@
     .header__content>h1 {
         font-size: 64px;
     }
+
+    .header__img>div>img {
+        width: 320px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -326,6 +330,7 @@
         font-size: 50px;
     }
 }
+
 
 @media screen and (max-width: 340px) {
     .header__content {
@@ -342,8 +347,9 @@
     }
 
     .header__img>div>img {
-        right: -34px;
+        right: 11px;
         top: -211px;
+        width: 300px;
     }
 }
 
