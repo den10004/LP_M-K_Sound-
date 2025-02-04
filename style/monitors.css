@@ -41,11 +41,6 @@
 }
 
 .content__cont>button {
-    font-size: 26px;
-    color: var(--white);
-    font-weight: bold;
-    width: 390px;
-    height: 90px;
     margin-top: 30px;
 }
 
@@ -123,9 +118,6 @@
     }
 
     .content__cont>button {
-        width: 290px;
-        height: 73px;
-        margin-top: 15px;
         font-size: 20px;
     }
 
@@ -165,11 +157,6 @@
 
     .content__cont>p {
         margin: 16px 0 46px 0;
-    }
-
-    .content__cont>button {
-        width: 245px;
-        height: 60px;
     }
 
     .monitors__quote {
@@ -247,10 +234,6 @@
 }
 
 @media screen and (max-width: 425px) {
-    .content__cont>button {
-        width: 100%;
-    }
-
     .content__cont>p {
         margin: 27px 0 25px 0;
     }
