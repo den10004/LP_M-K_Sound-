@@ -64,7 +64,7 @@
     line-height: 1.5;
     text-align: left;
     border-bottom: 1px solid var(--gray-link);
-    padding-bottom: 3px;
+    padding-bottom: 1px;
     cursor: pointer;
 }
 
@@ -125,6 +125,14 @@
     #consultForm>div:not(:last-child) {
         margin-bottom: 15px;
     }
+
+    .politic {
+        font-size: 14px;
+    }
+
+    .politic>span>a {
+        font-size: 14px;
+    }
 }
 
 
@@ -175,6 +183,14 @@
 
     #consultForm>button {
         margin-top: 5px;
+    }
+
+    .politic {
+        font-size: 12px;
+    }
+
+    .politic>span>a {
+        font-size: 12px;
     }
 }
 
