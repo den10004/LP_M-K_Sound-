@@ -1,118 +1,17 @@
-window.addEventListener("vite:preloadError", (e) => {
-  window.reload();
-});
+const headerMenu = document.querySelector(".header__menu");
+const mainMenu = document.querySelector(".main__menu");
+const menuClose = document.querySelector(".menu__close");
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    const target = document.querySelector(this.getAttribute("href"));
-    if (!target) return;
-
-    const topOffset = target.offsetTop;
-    window.scrollTo({
-      top: topOffset,
-      behavior: "smooth",
-    });
-  });
-});
-/*
-const headerOpen = document.querySelector(".header-open");
-const headerMenu = document.querySelector(".header__links");*/
-const openConsultModal = document.querySelectorAll(".cons-open");
-const openCompilationModal = document.querySelectorAll(".compilationOpenModal");
-const openChoiceModal = document.querySelector(".openChoiceModal");
-const closeAllModal = document.querySelectorAll(".closeAllModal");
-const popup = document.querySelectorAll(".popup");
-const popupChoiceModal = document.querySelector(".popup-choice");
-const consultModal = document.querySelector(".popup-consultation");
-const CompilationModal = document.querySelector(".popup-compilation");
-
-document.body.addEventListener("keydown", function (e) {
-  if (e.key == "Escape") {
-    closeAllModals();
-  }
-});
-
-function closeAllModals() {
-  popup.forEach((el) => (el.style.display = "none"));
-  document.body.style.overflow = "";
-}
-/*
 function openHeader() {
-  headerMenu.style.display = "flex";
+  mainMenu.style.display = "block";
 }
 
-
-function clearInputs() {
-  const inputs = document.querySelectorAll("input");
-  inputs.forEach((input) => {
-    input.value = "";
-  });
-}*/
-
-function openConsultModalFunc() {
-  consultModal.style.display = "block";
+function closeHeader() {
+  mainMenu.style.display = "none";
 }
 
-function openChoiceModalFunc() {
-  popupChoiceModal.style.display = "block";
-}
-
-function openConsultCompilationFunc(title) {
-  CompilationModal.style.display = "block";
-  const modalTitle = document.querySelector(".modal-title");
-  const hiddenInput = document.getElementById("titleHiddenConmpilation");
-  hiddenInput.value = title;
-  modalTitle.textContent = `Отправьте заявку и получите подборку акустики для ${title}`;
-}
-/*
-headerOpen.addEventListener("click", openHeader);*/
-
-closeAllModal.forEach((el) =>
-  el.addEventListener("click", function (e) {
-    closeAllModals();
-  })
-);
-
-openConsultModal.forEach((el) =>
-  el.addEventListener("click", function (e) {
-    const title =
-      e.target.parentNode.parentNode.previousElementSibling.innerHTML;
-    const hiddenInput = document.getElementById("titleHiddenConsultation");
-    hiddenInput.value = title;
-    openConsultModalFunc();
-  })
-);
-
-openCompilationModal.forEach((el) =>
-  el.addEventListener("click", function (e) {
-    const title = e.target.dataset.title;
-    openConsultCompilationFunc(title);
-  })
-);
-
-openChoiceModal.addEventListener("click", openChoiceModalFunc);
-
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("consultForm");
-  sendForm(form);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("compilationForm");
-  sendForm(form);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("choiceForm");
-  sendForm(form);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("helpForm");
-  sendForm(form);
-});
+headerMenu.addEventListener("click", openHeader);
+menuClose.addEventListener("click", closeHeader);
 
 document.addEventListener("DOMContentLoaded", function () {
   const url = new URL(window.location.href);

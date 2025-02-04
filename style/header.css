@@ -9,6 +9,9 @@
     padding: 55px 0 140px 0;
 }
 
+.main__menu {
+    display: none;
+}
 
 .header__logo>img {
     width: 180px;
@@ -175,7 +178,7 @@
 
 @media screen and (max-width: 1300px) {
     .header__logo>img {
-        width: 95px;
+        width: 100px;
     }
 
     .header {
@@ -301,7 +304,46 @@
         width: 361px;
         top: -210px;
     }
+
+    .main__menu {
+        position: absolute;
+        box-sizing: border-box;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .main__menu>button {
+        z-index: 5;
+    }
+
+    .menu__nav {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        line-height: 2;
+        position: relative;
+        align-items: center;
+    }
+
+    .menu__nav>a {
+        color: black;
+    }
+
+    .menu__close {
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 10px;
+        font-weight: 600;
+        background-color: white !important;
+    }
 }
+
 
 @media screen and (max-width: 660px) {
     .header__content>h1 {
