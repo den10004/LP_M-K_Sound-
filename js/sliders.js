@@ -1,3 +1,4 @@
+/*
 var swiper = new Swiper(".sound__slider", {
   slidesPerView: 5,
   spaceBetween: 65,
@@ -28,3 +29,4 @@ var swiper = new Swiper(".sound__slider", {
     prevEl: ".cardsSlider-button-next",
   },
 });
+*/
