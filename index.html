@@ -494,7 +494,7 @@
   </body>
   <script type="module" src="./js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="./js/sliders.js"></script>
+  <!--<script type="module" src="./js/sliders.js"></script> -->
   <script type="module" src="./js/telMask.js"></script>
 
   <script>
@@ -512,6 +512,39 @@
   </script>
 
   <script type="module" src="./js/metrika.js"></script>
+
+  <script>
+    var swiper = new Swiper(".sound__slider", {
+      slidesPerView: 5,
+      spaceBetween: 65,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        400: {
+          slidesPerView: 1.5,
+        },
+        425: {
+          slidesPerView: 2,
+        },
+        1300: {
+          slidesPerView: 3,
+        },
+        1400: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+        1401: {
+          slidesPerView: 5,
+          spaceBetween: 65,
+        },
+      },
+      navigation: {
+        nextEl: ".cardsSlider-button-prev",
+        prevEl: ".cardsSlider-button-next",
+      },
+    });
+  </script>
   <noscript>
     <div>
       <img
