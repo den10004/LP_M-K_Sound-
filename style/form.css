@@ -25,6 +25,8 @@
     margin-bottom: 37px;
 }
 
+
+
 #consultForm>div {
     display: flex;
     align-items: center;
@@ -45,6 +47,27 @@
 #consultForm>button {
     width: 100% !important;
 }
+
+.politic {
+    font-size: 16px;
+    color: var(--gray-link);
+    line-height: 1.5;
+    text-align: left;
+    margin-top: 40px;
+    padding-right: 27px;
+}
+
+
+.politic>span>a {
+    font-size: 16px;
+    color: var(--gray-link);
+    line-height: 1.5;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-link);
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 1700px) {
     .form {
@@ -185,6 +208,10 @@
 
     .from__wrap {
         margin: 30px 0 0 0px;
+    }
+
+    .politic {
+        padding-right: 20px;
     }
 }
 
