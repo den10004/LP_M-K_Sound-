@@ -326,7 +326,7 @@
     </section>
 
     <section class="banner">
-      <div class="layout">
+      <div class="layout2">
         <h2 class="font-headline">Добавьте к своим мониторам</h2>
         <h3>точный глубокий бас</h3>
         <p class="font-p">
@@ -338,7 +338,51 @@
       </div>
     </section>
 
-    <section class="form"></section>
+    <section class="form">
+      <div class="layout2">
+        <h2 class="font-headline">
+          Наши специалисты с радостью проконсультируют вас по любой продукции
+          <span style="white-space: nowrap">M&K Sound</span>
+        </h2>
+      </div>
+
+      <div class="form__block">
+        <img src="./images/form.webp" alt="форма" />
+
+        <div class="from__wrap">
+          <h4 class="font-36">
+            Оставьте заявку <br />
+            <span> для получения консультации</span>
+          </h4>
+
+          <form id="consultForm">
+            <div>
+              <label>Ваше имя</label>
+              <input
+                type="text"
+                required
+                id="name"
+                name="name"
+                minlength="3"
+                placeholder="Иванов Иван"
+              />
+            </div>
+
+            <div>
+              <label>Ваш телефон</label>
+              <input
+                type="tel"
+                required
+                id="phone"
+                name="phone"
+                placeholder="+7 (___) ___-__-__"
+              />
+            </div>
+            <button class="red-btn" type="submit">Получить консультацию</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <div class="popup-consultation darkening popup">
       <div class="window">
@@ -347,7 +391,7 @@
           по выбору AV-ресивера
         </h2>
 
-        <form class="from__modal" id="consultForm">
+        <form class="from__modal" id="consultFom">
           <input
             type="hidden"
             id=""

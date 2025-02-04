@@ -85,25 +85,16 @@ button:active {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1400px) {
-    .red-btn {
-        width: 290px;
-        height: 73px;
-        font-size: 20px;
-    }
+input {
+    background: #f2f5f9;
+    border: none;
+    padding-left: 40px;
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 1300px) {
-    .red-btn {
-        width: 245px;
-        height: 60px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .red-btn {
-        width: 100%;
-    }
+input::placeholder {
+    color: #979fa8;
+    font-size: 20px;
 }
 
 .font-headline {
@@ -114,6 +105,11 @@ button:active {
 .font-p {
     font-size: 24px;
     line-height: 1.5;
+}
+
+.font-36 {
+    font-size: 36px;
+    line-height: 1.111
 }
 
 
@@ -129,8 +125,25 @@ button:active {
     box-sizing: border-box;
 }
 
+.layout2 {
+    max-width: 1590px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
 
 @media screen and (max-width: 1400px) {
+    .red-btn {
+        width: 290px;
+        height: 73px;
+        font-size: 20px;
+    }
+
+    .font-36 {
+        font-size: 30px;
+        line-height: 1
+    }
+
     .layout {
         max-width: 1195px;
     }
@@ -142,11 +155,24 @@ button:active {
     .font-p {
         font-size: 20px;
     }
+
+    .layout2 {
+        max-width: 1045px;
+    }
 }
 
 @media screen and (max-width: 1300px) {
     .layout {
         max-width: 808px;
+    }
+
+    .font-36 {
+        font-size: 24px;
+    }
+
+    .red-btn {
+        width: 245px;
+        height: 60px;
     }
 
     .font-headline {
@@ -155,6 +181,10 @@ button:active {
 
     .font-p {
         font-size: 18px;
+    }
+
+    .layout2 {
+        max-width: 810px;
     }
 }
 
@@ -168,8 +198,16 @@ button:active {
         font-size: 14px;
     }
 
+    .font-36 {
+        font-size: 20px;
+    }
 }
 
+@media screen and (max-width: 425px) {
+    .red-btn {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 340px) {
     .layout {
