@@ -1,5 +1,6 @@
 /*
 var swiper = new Swiper(".sound__slider", {
+  loop: true,
   slidesPerView: 5,
   spaceBetween: 65,
   breakpoints: {

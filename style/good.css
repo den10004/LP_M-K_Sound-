@@ -1,0 +1,21 @@
+.good {
+    margin-top: 155px;
+}
+
+@media screen and (max-width: 1400px) {
+    .good {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .good {
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .good {
+        margin-top: 40px;
+    }
+}
