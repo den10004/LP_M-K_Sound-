@@ -19,7 +19,7 @@
 
 .article__content>img {
     max-width: 580px;
-    height: auto;
+    object-fit: contain;
 }
 
 .article__headline>h4 {
