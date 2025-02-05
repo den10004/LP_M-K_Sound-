@@ -121,6 +121,7 @@
 
     .header__img>div>img {
         right: 23px;
+        top: -362px;
     }
 
     .header__content>p {
@@ -133,6 +134,11 @@
     .header__content>p {
         max-width: 485px;
         margin-top: 45px;
+    }
+
+    .header__img>div>img {
+        top: -394px;
+        right: -15px;
     }
 }
 

@@ -109,7 +109,7 @@
     .footer__nav>div {
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin-bottom: 5px;
     }
 
