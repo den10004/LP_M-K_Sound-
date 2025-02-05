@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Монитор MPS1620P</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="description" content="description" />
+    <meta name="keywords" content="keywords" />
+    <meta name="robots" content="robots" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <div class="header-layout">
+      <header class="layout">
+        <div class="header">
+          <div class="header__top">
+            <a href="#" class="header__logo"><img src="./images/logo.png" /></a>
+            <ul class="header__nav">
+              <div>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">M&K Sound MPS1620P</a></li>
+              </div>
+              <div>
+                <li><a href="#">M&K Sound MPS252</a></li>
+                <li><a href="#">консультация</a></li>
+              </div>
+            </ul>
+            <a class="header__tel" href="tel:88000000000">8 800 000-00-00</a>
+
+            <div class="header__menu">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="main__menu">
+              <button class="menu__close">X</button>
+
+              <nav class="menu__nav">
+                <a href="#">Главная</a>
+                <a href="#">M&K Sound MPS1620P</a>
+                <a href="#">M&K Sound MPS252</a>
+                <a href="#">Консультация</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="layout">
+      <section class="good">
+        <h2 class="font-headline">
+          Студийный монитор MPS1620P
+        </h2>
+    </div>
+
+    <div class="footer-layout">
+      <footer class="layout">
+        <div class="footer">
+          <div class="footer__top">
+            <a href="#" class="footer__logo"><img src="./images/logo.png" /></a>
+            <div>
+              <ul class="footer__nav">
+                <div>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">M&K Sound MPS1620P</a></li>
+                </div>
+                <div>
+                  <li><a href="#">M&K Sound MPS252</a></li>
+                  <li><a href="#">консультация</a></li>
+                </div>
+              </ul>
+            </div>
+            <a class="footer__tel" href="tel:88000000000">8 800 000-00-00</a>
+          </div>
+          <div class="footer__bottom">
+            <div>
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="popup-consultation darkening popup">
+      <div class="window">
+        <h2>
+          Отправьте заявку на консультацию <br />
+          по выбору AV-ресивера
+        </h2>
+
+        <form class="from__modal" id="consultFom">
+          <input
+            type="hidden"
+            id=""
+            name="title"
+            value="Заявка на консультацию по выбору ресивера"
+          />
+          <input
+            type="hidden"
+            id="titleHiddenConsultation"
+            name="model"
+            value=""
+          />
+
+          <div class="form__wrap mb10">
+            <label for="name">Введите ваше имя</label>
+            <input
+              placeholder="Игорь Петрович"
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="3"
+            />
+          </div>
+          <div class="form__wrap">
+            <label for="tel">Введите ваш телефон</label>
+            <input
+              placeholder="+7 (___) __-__-__"
+              type="tel"
+              id="tel"
+              name="tel"
+              required
+            />
+          </div>
+
+          <button type="submit" class="button-yellow modal-btn">
+            Получить консультацию<svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.05394 0.13208L2.05394 3.97823L18.5732 3.97823L0.130859 22.4205L2.8424 25.1321L21.2847 6.68977L21.2847 23.209L25.1309 23.209L25.1309 0.13208L2.05394 0.13208Z"
+                fill="#2B2B2B"
+              />
+            </svg>
+          </button>
+
+          <div class="accept">
+            <span
+              >Нажимая кнопку "Получить консультацию", я подтверждаю, что
+              ознакомлен и согласен с условиями 
+              <a href="/privacy.html">Политики обработки</a>&nbsp;персональных
+              данных </span
+            >
+          </div>
+        </form>
+
+        <button class="closeConsultation closeAllModal">+</button>
+      </div>
+    </div>
+  </body>
+</html>
