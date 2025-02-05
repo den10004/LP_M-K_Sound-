@@ -64,9 +64,65 @@
 
     <div class="layout">
       <section class="good">
-        <h2 class="font-headline">
-          Студийный монитор MPS1620P
-        </h2>
+        <h2 class="font-headline">Студийный монитор MPS1620P</h2>
+
+        <div class="good__description">
+          <div class="good__silder">
+            <div class="swiper goodSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/MPS1620P-rotate.webp" alt="MPS2520P" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/MPS1620P-front.webp" alt="MPS2520P" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/MPS1620P-back.webp" alt="MPS2520P" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/MPS1620P-left.webp" alt="MPS2520P" />
+                </div>
+              </div>
+              <div class="goodsPagination">
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="good__btn">
+            <p class="font-36">Цена по запросу ₽</p>
+            <button class="red-btn center-bl good-size">
+              Заказать в 1 клик</button
+            ><button class="red-btn good-size">Получить консультацию</button>
+          </div>
+          <div class="good__text">
+            <p class="font-p">
+              Студийный монитор MPS 1620P оснащён длинноходным 6,5-дюймовым
+              динамиком и 1-дюймовым купольным высокочастотным динамиком с
+              низким уровнем сжатия, обеспечиващим впечатляющий звук для
+              "звуковых постановок с высоким разрешением. <br /><br />
+              Двуканальные усилители мощности обеспечивают точную работму низко-
+              и среднечастотных, а также высокочастотных секции и полный
+              контроль над динамикой сигнала. <br /><br />
+              MPS1620P может работать как в закрытом, так и в открытом корпусе
+              благодаря съёмной "системе заглушек портов" на задней панели
+              динамика. <br /><br />
+              При работе с сабвуфером выбор конфигурации с закрытым корпусом и
+              фильтром, установленным в положение "нормальный", обеспечит
+              классическую конфигурацию кроссовера M&K Sound для сабвуфера и
+              сателлитов, а при использовании MPS1620P в качестве автономного
+              монитора конфигурация с портом и фильтром, установленным в
+              положение "полнодиапазонный", расширит диапазон низких частот и
+              обеспечит точную "широкополосную" реакцию для применения в
+              качестве монитора ближного поля. <br /><br />MPS1620P - это гибкий
+              высокочастотный студийный монитор, который можно использовать для
+              эталонных записей, редактирования, обработки и мастеринга в
+              музыкальных и кинопроектах.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>sdsdsd</section>
     </div>
 
     <div class="footer-layout">
@@ -170,3 +226,29 @@
     </div>
   </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".goodSwiper", {
+    loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      375: {
+        slidesPerView: 2,
+      },
+      540: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1301: {
+        slidesPerView: 1,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>

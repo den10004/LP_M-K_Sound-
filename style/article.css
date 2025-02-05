@@ -8,16 +8,12 @@
     padding: 0 20px;
     box-sizing: border-box;
     margin: 0 auto;
-
 }
 
 .article__content {
     display: flex;
     margin-top: 140px;
-
 }
-
-
 
 .article__img>img {
     max-width: 580px;
@@ -29,8 +25,6 @@
     color: var(--text);
     font-weight: bold;
 }
-
-
 
 .article__headline>p {
     font-size: 36px;
@@ -80,6 +74,7 @@
 .block2-padding {
     padding-left: 100px;
 }
+
 
 @media screen and (max-width: 1400px) {
     .article-layout {
@@ -134,7 +129,6 @@
         width: 30px;
         height: 30px;
     }
-
 
     .article__author {
         font-size: 16px;
