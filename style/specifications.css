@@ -1,0 +1,45 @@
+.specifications {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.specifications>div {
+    width: 48%;
+}
+
+.specifications>div>p {
+    font-weight: bold;
+}
+
+
+
+.specifications__list>li {
+    display: flex;
+    padding: 20px 0;
+}
+
+.specifications__list>li:nth-child(odd) {
+    background: var(--gray);
+}
+
+.specifications__list>li>div {
+    padding-left: 30px;
+    box-sizing: border-box;
+    width: 48%;
+
+}
+
+
+@media screen and (max-width: 1300px) {
+    .specifications {
+        margin-top: 90px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .specifications {
+        margin-top: 60px;
+    }
+}
