@@ -10,6 +10,8 @@ export default defineConfig({
       input: {
         index: "./index.html",
         MPS1620P: "./MPS1620P.html",
+        MPS1620P: "./MPS2520P.html",
+        thanks: "./thanks.html",
         privacy: "./privacy.html",
       },
     },

@@ -8,15 +8,15 @@
       href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Политика конфиденциальности</title>
+    <title>Спасибо</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="robots" content="" />
     <script type="module" crossorigin src="./assets/metrika-CyHrqYyk.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/style-CHJaKaxu.css">
   </head>
-  <body>
-    <div class="header-layout">
+  <body style="background: var(--text)">
+    <div class="thanks-layout">
       <header class="layout">
         <div class="header">
           <div class="header__top">
@@ -24,10 +24,10 @@
             <ul class="header__nav">
               <div>
                 <li><a href="#">Главная</a></li>
-                <li><a href="#">M&K Sound MPS2520P</a></li>
+                <li><a href="./MPS1620P.html">M&K Sound MPS1620P</a></li>
               </div>
               <div>
-                <li><a href="#">M&K Sound MPS252</a></li>
+                <li><a href="./MPS2520P.html">M&K Sound MPS2520P</a></li>
                 <li><a href="#">консультация</a></li>
               </div>
             </ul>
@@ -42,18 +42,44 @@
 
               <nav class="menu__nav">
                 <a href="#">Главная</a>
-                <a href="#">M&K Sound MPS1620P</a>
+                <a href="./MPS1620P.html">M&K Sound MPS1620P</a>
                 <a href="#">M&K Sound MPS252</a>
                 <a href="#">Консультация</a>
               </nav>
             </div>
           </div>
+          <div class="thanks">
+            <div class="thanksBlock">
+              <h1>
+                <span id="output"></span>Александр,<br />
+                спасибо за заявку!
+              </h1>
+              <p style="font-weight: bold">
+                Мы свяжемся с Вами в ближайшее время
+              </p>
+
+              <div class="timetable">
+                <h5>График работы:</h5>
+                <p><span>9:00 до 18:00 </span>(по Мск)</p>
+                <div class="timetable__days">
+                  <div>Пн</div>
+                  <div>Вт</div>
+                  <div>Ср</div>
+                  <div>Чт</div>
+                  <div>Пт</div>
+                </div>
+                <div class="timetable__span">
+                  <span
+                    >Если Вы оставили заявку в нерабочее время,<br />
+                    мы перезвоним Вам на следующий рабочий день</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
     </div>
-
-    <div class="layout"></div>
-
     <div class="footer-layout">
       <footer class="layout">
         <div class="footer">
@@ -83,7 +109,18 @@
     </div>
   </body>
 </html>
-
+
+<style></style>
+<script>
+  outputElement = document.getElementById("output");
+  const dataFromLocalStorage = localStorage.getItem("name");
+  //localStorage.clear();
+  if (dataFromLocalStorage) {
+    outputElement.innerHTML = `${dataFromLocalStorage}`;
+  } else {
+    console.log("данных нет");
+  }
+</script>
 <noscript>
   <div>
     <img
