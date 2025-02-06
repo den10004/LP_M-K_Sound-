@@ -1,5 +1,11 @@
+.layout-specifications {
+    max-width: 1590px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 120px auto 0 auto;
+}
+
 .specifications {
-    margin-top: 120px;
     display: flex;
     justify-content: space-between;
 }
@@ -8,11 +14,13 @@
     width: 48%;
 }
 
-.specifications>div>p {
+.spec-bold {
     font-weight: bold;
 }
 
-
+.specifications__list {
+    margin-top: 30px;
+}
 
 .specifications__list>li {
     display: flex;
@@ -20,7 +28,12 @@
 }
 
 .specifications__list>li:nth-child(odd) {
-    background: var(--gray);
+    background: var(--gray-f8);
+    border-top: 1px solid var(--gray-border);
+}
+
+.specifications__list>li:nth-child(even) {
+    border-bottom: 1px solid var(--gray-border);
 }
 
 .specifications__list>li>div {
@@ -30,16 +43,94 @@
 
 }
 
+.specifications__color {
+    margin-top: 70px;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .layout-specifications {
+        max-width: 1195px;
+    }
+}
 
 @media screen and (max-width: 1300px) {
+    .layout-specifications {
+        max-width: 808px;
+    }
+
     .specifications {
         margin-top: 90px;
+        flex-direction: column;
+        justify-content: start;
     }
+
+    .specifications>div {
+        width: 100%;
+    }
+
+    .specifications__right {
+        margin-top: 50px;
+    }
+
+    .specifications__color {
+        margin-top: 50px;
+    }
+
+
 }
 
 
 @media screen and (max-width: 767px) {
+    .layout-specifications {
+        max-width: 100%;
+        padding: 0;
+    }
+
     .specifications {
         margin-top: 60px;
+    }
+
+    .specifications__list>li>div {
+        padding-left: 20px;
+    }
+
+    .specifications__list>li>div {
+        font-size: 14px;
+    }
+
+    .spec-bold {
+        padding-left: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .specifications__list>li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .specifications__list>li>div:first-child {
+        font-weight: bold;
+
+    }
+
+    .specifications__list>li:nth-child(odd) {
+        border-top: none;
+    }
+
+    .specifications__list>li:nth-child(even) {
+        border-bottom: none;
+    }
+
+    .specifications__list>li>div {
+        width: 100%;
+        line-height: 1.286;
+    }
+
+    .specifications__list>li {
+        padding: 15px 15px 15px 0;
     }
 }

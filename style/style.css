@@ -21,7 +21,9 @@
     --active: #c41416;
     --text: rgb(0, 0, 0);
     --gray: #f2f5f9;
-    --gray-link: rgb(151, 159, 168)
+    --gray-link: rgb(151, 159, 168);
+    --gray-border: #e0e6ec;
+    --gray-f8: #f8f8f8;
 }
 
 body {
