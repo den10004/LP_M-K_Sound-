@@ -107,8 +107,8 @@
 .header__img>div>img {
     position: absolute;
     top: -388px;
-    right: -72px;
-    width: 761px;
+    right: calc(50% - 757px);
+    width: 634px;
 }
 
 @media screen and (max-width: 1590px) {
@@ -120,14 +120,15 @@
         font-size: 215px;
     }
 
-    .header__img>div>img {
-        right: 23px;
-        top: -362px;
-    }
-
     .header__content>p {
         font-size: 20px;
         max-width: 665px;
+    }
+
+    .header__img>div>img {
+        top: -351px;
+        right: calc(50% - 638px);
+        width: 549px;
     }
 }
 
@@ -138,9 +139,9 @@
     }
 
     .header__img>div>img {
-        top: -394px;
-        right: 2px;
+        top: -392px;
     }
+
 }
 
 @media screen and (max-width: 1400px) {
@@ -177,9 +178,8 @@
     }
 
     .header__img>div>img {
-        right: -51px;
-        width: 667px;
-        top: -377px;
+        top: -379px;
+        right: calc(50% - 542px);
     }
 }
 
@@ -220,7 +220,6 @@
         line-height: 2;
     }
 
-
     .header__tel {
         font-size: 14px;
     }
@@ -245,34 +244,32 @@
     }
 
     .header__img>div>img {
-        right: -67px;
-        width: 534px;
-        top: -328px;
+        top: -336px;
+        right: calc(50% - 388px);
+        width: 444px;
     }
+
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 830px) {
     .header__img>div>img {
-        width: 464px;
-        right: 0px;
-        top: -331px;
+        width: 360px;
+        top: -285px;
+        right: calc(50% - 318px);
+        width: 360px;
     }
 }
-
 
 @media screen and (max-width: 800px) {
     .header__content>h1 {
         font-size: 100px;
     }
 
-    .header__img>div>img {
-        right: 0px;
-    }
-
     .header__content>p {
         max-width: 300px;
     }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -317,11 +314,6 @@
         margin: 4px 0 4px 0px;
     }
 
-    .header__img>div>img {
-        width: 361px;
-        top: -210px;
-    }
-
     .main__menu {
         position: absolute;
         box-sizing: border-box;
@@ -359,6 +351,16 @@
         font-weight: 600;
         background-color: white !important;
         color: var(--text);
+    }
+
+    .header__img>div>img {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: -55px;
+        top: auto;
+        width: 300px;
     }
 }
 
@@ -407,8 +409,6 @@
     }
 
     .header__img>div>img {
-        right: 11px;
-        top: -211px;
         width: 300px;
     }
 }
