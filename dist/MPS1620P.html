@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon-DcGi89cq.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Монитор MPS1620P</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="description" content="description" />
+    <meta name="keywords" content="keywords" />
+    <meta name="robots" content="robots" />
+    <link rel="stylesheet" crossorigin href="./assets/style-D_LHTmK6.css">
+  </head>
+
+  <body>
+    <div class="header-layout">
+      <header class="layout">
+        <div class="header">
+          <div class="header__top">
+            <a href="#" class="header__logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALMAAABzCAMAAADkIsN1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC9FBMVEVHcEz///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+wCOQ4AAAA+3RSTlMAc/i4hNfmBUdN5ewQPQlLGtkCyIW9a4J9tONS2IMmJevqD0zpT0qeOwEGfrE+aic4sr4ojrXHCmPShkANK87Ee1UHXlq7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" /></a>
+            <ul class="header__nav">
+              <div>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">M&K Sound MPS1620P</a></li>
+              </div>
+              <div>
+                <li><a href="#">M&K Sound MPS252</a></li>
+                <li><a href="#">консультация</a></li>
+              </div>
+            </ul>
+            <a class="header__tel" href="tel:88000000000">8 800 000-00-00</a>
+
+            <div class="header__menu">
+              <span></span><span></span><span></span>
+            </div>
+
+            <div class="main__menu">
+              <button class="menu__close">X</button>
+
+              <nav class="menu__nav">
+                <a href="#">Главная</a>
+                <a href="#">M&K Sound MPS1620P</a>
+                <a href="#">M&K Sound MPS252</a>
+                <a href="#">Консультация</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="layout">
+      <section class="good">
+        <h2 class="font-headline">Студийный монитор MPS1620P</h2>
+
+        <div class="good__description">
+          <div class="good__silder">
+            <div class="swiper goodSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/MPS1620P-rotate-C5G-jUjO.webp" alt="MPS2520P" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/MPS1620P-front-DkNACWgI.webp" alt="MPS2520P" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/MPS1620P-back-BwHZB-FD.webp" alt="MPS2520P" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/MPS1620P-left-BoRHP9TI.webp" alt="MPS2520P" />
+                </div>
+              </div>
+              <div class="goodsPagination">
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="good__btn">
+            <p class="font-36">Цена по запросу ₽</p>
+            <button class="red-btn center-bl good-size">
+              Заказать в 1 клик</button
+            ><button class="red-btn good-size">Получить консультацию</button>
+          </div>
+          <div class="good__text">
+            <p class="font-p">
+              Студийный монитор MPS 1620P оснащён длинноходным 6,5-дюймовым
+              динамиком и 1-дюймовым купольным высокочастотным динамиком с
+              низким уровнем сжатия, обеспечиващим впечатляющий звук для
+              "звуковых постановок с высоким разрешением. <br /><br />
+              Двуканальные усилители мощности обеспечивают точную работму низко-
+              и среднечастотных, а также высокочастотных секции и полный
+              контроль над динамикой сигнала. <br /><br />
+              MPS1620P может работать как в закрытом, так и в открытом корпусе
+              благодаря съёмной "системе заглушек портов" на задней панели
+              динамика. <br /><br />
+              При работе с сабвуфером выбор конфигурации с закрытым корпусом и
+              фильтром, установленным в положение "нормальный", обеспечит
+              классическую конфигурацию кроссовера M&K Sound для сабвуфера и
+              сателлитов, а при использовании MPS1620P в качестве автономного
+              монитора конфигурация с портом и фильтром, установленным в
+              положение "полнодиапазонный", расширит диапазон низких частот и
+              обеспечит точную "широкополосную" реакцию для применения в
+              качестве монитора ближного поля. <br /><br />
+              <span style="white-space: nowrap">MPS1620P</span> - это гибкий
+              высокочастотный студийный монитор, который можно использовать для
+              эталонных записей, редактирования, обработки и мастеринга в
+              музыкальных и кинопроектах.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="layout-specifications">
+      <div class="specifications">
+        <div class="specifications__left">
+          <p class="font-36 spec-bold">Звук</p>
+          <ul class="specifications__list">
+            <li>
+              <div>Мощность усилителя НЧ-СЧ:</div>
+              <div>100 Вт RMS/200 Вт пиковая мощность</div>
+            </li>
+            <li>
+              <div>Мощность усилителя высокой частоты:</div>
+              <div>50 Вт RMS/100 Вт пиковая мощность</div>
+            </li>
+            <li>
+              <div>Низкие/средние частоты:</div>
+              <div>1 x 6,5” полипропиленовый НЧ-динамик</div>
+            </li>
+            <li>
+              <div>Высокочастотные драйверы:</div>
+              <div>1 x 1” твитер с мягким куполом</div>
+            </li>
+            <li>
+              <div>Частотная характеристика:</div>
+              <div>
+                Герметичная/нормальная настройка 80-22 кГц +/-2 дБ / (нагрузка
+                на стену или консоль) 45-22 кГц +/-2дБ. Портированная/нормальная
+                настройка 45-22 кГц +/-2 дБ Портированная/полнодиапазонная
+                настройка / (нагрузка на стену или консоль 35-22 кГц +/-2 дБ)
+              </div>
+            </li>
+            <li>
+              <div>Суммарные гармонические искажения:</div>
+              <div>0,025% в 8 Ом НЧ канал / 0,025% в 4 Ом ВЧ канал</div>
+            </li>
+            <li>
+              <div>Соотношение сигнал/шум:</div>
+              <div>100дБ</div>
+            </li>
+            <li>
+              <div>Потребляемая мощность переменного тока:</div>
+              <div>Режим ожидания/Среднее/Макс. (15 Вт, 30 Вт, 240 Вт)</div>
+            </li>
+            <li>
+              <div>Напряжение сети переменного тока:</div>
+              <div>
+                115 В переменного тока/60 Гц, 2 А – 230 В переменного тока/50
+                Гц, 1А
+              </div>
+            </li>
+            <li>
+              <div>Входное сопротивление:</div>
+              <div>Небалансный 11кОм / балансный 22кОм</div>
+            </li>
+            <li>
+              <div>Чувствительность входа несимметричная</div>
+              <div>100 мВ 88 дБ 1 м / сбалансированный 200 мВ 88 дБ 1 м</div>
+            </li>
+            <li>
+              <div>Максимальный выходной уровень:</div>
+              <div>106 дБ/100 Гц</div>
+            </li>
+            <li>
+              <div>Максимальный ввод:</div>
+              <div>24 дБн сбалансированный</div>
+            </li>
+            <li>
+              <div>Фильтр верхних частот:</div>
+              <div>Фиксированный 80 Гц (24 дБ)</div>
+            </li>
+          </ul>
+        </div>
+        <div class="specifications__right">
+          <p class="font-36 spec-bold">Разрешение</p>
+          <ul class="specifications__list">
+            <li>
+              <div>Размеры ВxШxГ::</div>
+              <div>12,6 x 8,3 x 11,6” / 321 x 213 x 297 мм</div>
+            </li>
+            <li>
+              <div>Вес:</div>
+              <div>20,3 фунта / 9,2 кг</div>
+            </li>
+          </ul>
+          <div class="specifications__color">
+            <p class="font-36 spec-bold">Цвет</p>
+            <ul class="specifications__list">
+              <li>
+                <div>Конечный:</div>
+                <div>Черный атлас</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="layout">
+      <div class="review">
+        <p class="font-36 spec-bold">Статьи и обзоры</p>
+
+        <div class="review__block review-rev">
+          <div class="review__left">
+            <img src="./assets/article-MPS1620P-ClhJNrTF.webp" alt="Статья" />
+          </div>
+          <div class="review__right">
+            <h5 class="font-36 spec-bold">
+              Эти новые динамики от M&K позволяют вам по желанию переключаться
+              между конструкциями с фазоинвертером и бесконечной акустикой
+            </h5>
+            <div class="review__content">
+              <blockquote>
+                <strong>
+                  Эти новые динамики от M&K позволяют вам по желанию
+                  переключаться между конструкциями с фазоинвертером и
+                  бесконечной акустикой<br /><br /></strong
+                >Американская компания по производству профессиональных
+                громкоговорителей
+                <span style="white-space: nowrap">Miller & Kreiser</span>
+                создала очень прочную репутацию благодаря своим студийным
+                мониторам. Необычные на вид многодрайверные флагманы
+                <span style="white-space: nowrap">М&К МРS2510</span> (обзор в
+                SOS за июль 2001 г) стали фаворитами во многих небольших кино- и
+                телестудиях, а также в приложениях для ремиксов объемного звука.
+                Последнее цополнение к линейке МРS — компактный двухполосный
+                монитор ближнего поля под названием МРS1611P, и он тоже делает
+                кое-что не так, как обычно. Динамик предназначен в первую
+                очередь для использования в конфигурации «сателлит плюс
+                сабвуфер», хотя его также можно использовать как автономный
+                полнодиапазонный цинамик, хотя и с более низким максимальным
+                уровнем звукового цавления. Обзор был основан на мониторах
+                МРS1611Р, используемых отдельно, без сабвуфера. Хью Робджонс
+                <br /><br />
+                <strong>Хью Робджонс</strong>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+
+        <div class="review__block">
+          <div class="review__left">
+            <img src="./assets/article---MPS1620-CPHm8lAZ.webp" alt="Статья" />
+          </div>
+          <div class="review__right">
+            <h5 class="font-36 spec-bold">
+              AV/HiFi — лучшие профессиональные мониторные колонки<span
+                style="white-space: nowrap"
+                >Miller & Kreisel MPS-1620P</span
+              >
+            </h5>
+            <div class="review__content">
+              <blockquote>
+                <strong>
+                  AV/HiFi — лучшие профессиональные мониторные колонки
+                  <span style="white-space: nowrap"
+                    >Miller & Kreisel MPS-1620P</span
+                  ></strong
+                ><br /><br />Автор занимается воспроизведением аудио и видео
+                более 20 лет и всегда призывал других разделять аудио и видео.
+                Это просто потому, что колонки, предназначенные для домашних
+                кинотеатров, всегда отличаются от двухканальных по концепции
+                дизайна и качеству звука. В какой-то степени они совершенно
+                противоположны. Но, как я сказал во введении,
+                <span style="white-space: nowrap">МРS-1620Р,</span> несомненно,
+                лучший выбор для читателей с ограниченным бюджетом, которые
+                хотят получить лучший домашний кинотеатр и двухканальные
+                эффекты. Аудиофилам больше не нужно разделять аудио и видео, им
+                нужно только переключаться, в разных режимах можно получить
+                отличное видео и двухканальные звуковые эффекты. Если вы
+                любитель двухканального аудио, боитесь неприятностей и не хотите
+                ставить дома «старое» оборудование, это ваш лучший выбор.
+                Потоковый плеер плюс пара
+                <span style="white-space: nowrap">МРS-1620Р</span> уже
+                обеспечивают качество звука уровня Нi-Fi. Неудивительно, что в
+                последние годы все больше и больше людей используют активные
+                колонки! <br /><br />
+                <strong>Audiotechnique</strong>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-layout">
+      <footer class="layout">
+        <div class="footer">
+          <div class="footer__top">
+            <a href="#" class="footer__logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALMAAABzCAMAAADkIsN1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC9FBMVEVHcEz///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+wCOQ4AAAA+3RSTlMAc/i4hNfmBUdN5ewQPQlLGtkCyIW9a4J9tONS2IMmJevqD0zpT0qeOwEGfrE+aic4sr4ojrXHCmPShkANK87Ee1UHXlq7MLDtqpaBCAOH7pULKg4dy98V4vLwGeQpySHzDD+8/HlwBFQW4GBB6PGtk3L9bmJpv4gj3OFGU3dC9vlZThSM/qK5t1auZ1io79P7rxIXRc2RdkRlHySUNi0eoS/0Q8wuenTGINF/xcFt3Ug11BM3IpfP9dU69+cymKwzpqTWaJkROSw0PFtsdXgY28KKUXG6nUlfkquagNobpZDQfI8xjcCfs2Zho7abi4mg3m+pp/rKXVfDZLyv4rMAAAleSURBVHja7dxnfBTVHsbxh5UQAQGzBEVFgXBhd0MJKyWEJJiEQCAJhCBpEJLQe++9Se8qoNKLgoBg77333r2Wa+96e/m9uS9mdneSz26Ipkh0/m9yTs7s7HdnzpxzZubMSBWPEQdynlQti/owM7aWmd+AqVfXvu3c8DzbbJtts222zba5cpHyi8xnRQd//cKtw8uaVyz5PPjC531ZeNVZYD4OR8uYH4V6nqAL3wqM++3Nc+FUGfNKGBoedOF2MCX6tzc3gwvKmM+FBsHN50K9cNtsm21zZSNxSIXMifsraU68ucrIdVneqALm5vzzmUqZdzHz2qoy94NPKmDeAe0rZY6AQVVlXgB1K2BeCy9VypwDPavKHAEXVsB8DtSplLkpRNpm22ybbfPv17y397AaM99ZtCEvuPm2ptsnVNi8D3Kza8ocASeCm5+AjAqbk4EuNWXOhx+DmxfCVRU2NwEuqylzC7g0uDkM6v4ic8tqMd+//pqqMEevb1Nj5oNwT1WYH4feNWVOhQJnFZjrwfSaMi+Gi6vCHGEdjVez+ZIqMof9wczX1DrzHbcv7++pFvPsyDtDmCdFdq6I+d3IjsEdI4HM6jA/D1tig5rdUJB9ZvM+GDoglLlVbHWYk4EhQc2lSkKbD0NBcFkjaN34TNhxnx4495ea64Pj/KDmNtaS0OZG8KfGv968CApSapk5GUqermXmttAqyjbb5lpnDq9W8/qIIzHBzeNb7Bge3Ly4Ra/B5ZlHTMvtWZ3mHBgT3NwdMoKbj8Gl5ZnfAW6oRvNbsCu4+fuQ5nWQUZ55JTC4Gs1GSTDzRdA8uNkoCW1uZ5yr22bbXIvM0em3X1BRc++4K4qr19zp4aUVMF8LnF/GfNfOeQnBzHHwZrWa+0LJgDOb3wASy5i9MCOY+RY4Va3m66BfypnNTawy07wWegYzXw6dqtXcEepF/zpzB2hvm23z79ec2n7wWWjePaEcc2f469ln/paCRqHNqTDUedaZw2BQaLMpO8vMR2BebTM3hZ622Tbb5j+uucWvMBeVa14BrZzSSXhTWg+HnpYawFX+kitghpQM914tXQxfSCuhX7g0F27y34HIh65GSbSvZDywX8qHL/xj/lEQKS02rq/EQVfpMAyNtZYkSnHwmXQYpsb6xvyXBM5g4qG1pC9hkrQUWkdL98AMqSM09EjNYLYUb3xlDhyVOkOWU+oD30gj4d5sqQiWSHuNXnUtPCk1AscI6RiMkfrC1AFSN/ib5AbukEZBknQQDo2TLoKx0v3AKukcaC49C8vGSR2gjtQZmGCOkZp74yUldpgeKynJO1JSTIfpjSUleZdKGp62J1vSGO9kSS3T9sRKGuO9TlLM9kHZkpZ4J0uavz3dyCySdNmG9BGSdnmvk1S84e4Rkl7y3ipp97S7R0g66l0kqXjawwmS6njbSZr/yMMJkmZ4b5V0w7SnoiS96W0jqfj9D66UNNbbTnbYYYcddthhhx12/M7iMrfbf/u7i9sdZSYT3e5sSbrNbYTlouRgtzvBl56/om563dS7Sq+y2O32jXVvcLv9s+SGJGekD+wd48s2drtvtHzoRrfbf8cnftbOPTMWpZi5hPoXpqcnNXnav2isA/7sy6wD32NbRfCcJM8DmNFiuu/e7X/heSO1++PRAGx7vNR11qfgejO5E8w7UcNcy4wVvf+Q+dNhq+VDT/hPRGbfZyyYP0uSNHaKkW311Spz0TrAVN/DwhtgspmcC59L8rQmEC8bRWvBeKKt/jLAUegAHO9Yvn4nTDKTr/v47obAtgbLAFKNnQpNLR/KgeGSpM0AWfUAduRJScCWnHvuNU5hJEkPAnxjZvpDvJnsA30leRpQMCn5P+NTM54A5kmSukFnSXoOaDo+LzMvuQh4NPD1XQPzhwdCD0m6eRvc9+9rMle1bYa5M2PgCou5O3SRpDXAoGeiGsc0dzAxT/th9Jwo6Y7FR3xPwW2COa+RW555imWPxFvNC+Bjs+wf8Gq55n/BOnPq3yDISglpbgKYZ1EP/RAtzQHfc+7R/juDW/QitCnH3OpK819J8BeLeROE+b/xQxhvNb9gJiMN81Jo4C8ughdDmrfCRuuxcZPlcPNf//9Jeds4VhGzFhrXGExzf9jkX1Eq/N1qXhn4nT2MbTvWX7wU5oYyt4SJZSf9LdtYaqLjOhgiPW60EWc0320cPqZ5K6Nf8a9o2GiOW807HklLS0tLe+RDwzzXcn9VmUMpjA5h3gRPld6s3YHCzZ38zWIXSJPU1/hzRvMuYyquYfY05MHAvKYBWTw4wGK2RA9JESyfEGCE4XglhPkUJJU2x24wVtPrlJF34YiSpO9giCRN87e8OsdoCUqZI426ZponUuLvWpTwAAucFvPEXkZMMcxHGG2ZTXQxWQkhzD18jZMl4qcbDXazFElXz6T17Dlz5mz8CvaYTePIwHbeV9b8GnQM1I1RsNe/3jthlLVuJJvJDMO8GZr4i+9azfFQ9bkR3BKks372+m4YExQyLHtweYKkT8yWSdJCHKvKmA9CQWbAfCGs8a/0MetTyF1hhZm81FjjBbDOX/wZpIcyZx6C3UHHGN+uZoEUvoWZcUbUgzHG0X/SWOKw2a55GtDanKA+ZKHpMs0fAW3lv77KsHLa5wQHzDb/NRKjx4spvUnNtm4g9PIdGJMl80UrkuSgUPofDDTzE0YzRVLsA+Y0t2cnQifT3Oo8j9MTPv+lLRDhtPYpScCLHkmeWRi/+bZRa6KC9ymTgJsyJWnSanjP7AdPOp1Op9MZ7gyYs/tB0V5JKv6aT1M0f+LLxrDtydX0kV61bJvvjG6gNxA36PXtwO0yzTMXns5dkA8Ql1eq79ZjwIK35719GqOaZGbBB8HNeg8o/PmnH8KAi2SaHaf/mpubm5t/en+g7+7rAF6b/nqHbcBHOgD9prXfeKIPMFmzoJt/zzwEJEha4qvfJ413v3kCNb5fT3MotdU/kmru8B0NJyQpFvja+C2z5GuZOGqkxpaYy642++IbLUdTojQFDhrjvVt8/83pLK0P8+VmzpJm/OzaF6hOPV39iyVp+I/ds0pe3e6rfJ6uLiMi3/C/wG6syzXfTN584q38kvy32ptvS3h3asRwSZtcrvt9M0RdLt/LD4a9/H1uSeHldX3D1ldc/ng7T0pyuXx7ve2aXkOnHt9sDP8GvHAgJ+tQw2PzWkr/B9f54CvaMijuAAAAAElFTkSuQmCC" /></a>
+            <div>
+              <ul class="footer__nav">
+                <div>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">M&K Sound MPS1620P</a></li>
+                </div>
+                <div>
+                  <li><a href="#">M&K Sound MPS252</a></li>
+                  <li><a href="#">консультация</a></li>
+                </div>
+              </ul>
+            </div>
+            <a class="footer__tel" href="tel:88000000000">8 800 000-00-00</a>
+          </div>
+          <div class="footer__bottom">
+            <div>
+              <a href="#">Политика конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="popup-consultation darkening popup">
+      <div class="window">
+        <h2>
+          Отправьте заявку на консультацию <br />
+          по выбору AV-ресивера
+        </h2>
+
+        <form class="from__modal" id="consultFom">
+          <input
+            type="hidden"
+            id=""
+            name="title"
+            value="Заявка на консультацию по выбору ресивера"
+          />
+          <input
+            type="hidden"
+            id="titleHiddenConsultation"
+            name="model"
+            value=""
+          />
+
+          <div class="form__wrap mb10">
+            <label for="name">Введите ваше имя</label>
+            <input
+              placeholder="Игорь Петрович"
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="3"
+            />
+          </div>
+          <div class="form__wrap">
+            <label for="tel">Введите ваш телефон</label>
+            <input
+              placeholder="+7 (___) __-__-__"
+              type="tel"
+              id="tel"
+              name="tel"
+              required
+            />
+          </div>
+
+          <button type="submit" class="button-yellow modal-btn">
+            Получить консультацию<svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2.05394 0.13208L2.05394 3.97823L18.5732 3.97823L0.130859 22.4205L2.8424 25.1321L21.2847 6.68977L21.2847 23.209L25.1309 23.209L25.1309 0.13208L2.05394 0.13208Z"
+                fill="#2B2B2B"
+              />
+            </svg>
+          </button>
+
+          <div class="accept">
+            <span
+              >Нажимая кнопку "Получить консультацию", я подтверждаю, что
+              ознакомлен и согласен с условиями 
+              <a href="/privacy.html">Политики обработки</a>&nbsp;персональных
+              данных </span
+            >
+          </div>
+        </form>
+
+        <button class="closeConsultation closeAllModal">+</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".goodSwiper", {
+    loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      375: {
+        slidesPerView: 2,
+      },
+      540: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      1301: {
+        slidesPerView: 1,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>

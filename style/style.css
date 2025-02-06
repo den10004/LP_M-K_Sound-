@@ -8,6 +8,7 @@
 @import "./form.css";
 @import "./good.css";
 @import "./specifications.css";
+@import "./review.css";
 @import "./footer.css";
 @import "./modals.css";
 @import "./privacy.css";
@@ -62,10 +63,7 @@ a:active {
     color: var(--active);
 }
 
-.layout {
-    max-width: 1500px;
-    margin: 0 auto;
-}
+
 
 button {
     background-color: var(--color-btb-st);
@@ -128,6 +126,7 @@ input::placeholder {
     max-width: 1590px;
     padding: 0 20px;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .layout2 {

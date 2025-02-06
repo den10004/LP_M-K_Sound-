@@ -1,0 +1,171 @@
+.review {
+    margin-top: 140px;
+}
+
+.review__block {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review__left {
+    max-width: 486px;
+}
+
+.review__left>img {
+    width: 100%;
+}
+
+.review__right {
+    max-width: calc(100% - 568px)
+}
+
+
+.review__content {
+    display: flex;
+    position: relative;
+}
+
+
+.review__content::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: url(/images/quote.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.review__content>blockquote {
+    font-size: 30px;
+    line-height: 1.4;
+    padding-left: 100px;
+}
+
+
+.review__right>h5 {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .review {
+        margin-top: 120px;
+    }
+
+    .review__block {
+        margin-top: 70px;
+    }
+
+    .review__right>h5 {
+        display: block;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+
+    .review__content>blockquote>strong {
+        display: none;
+    }
+
+    .review__content>blockquote {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .review-rev {
+        flex-direction: row-reverse;
+    }
+
+    .review__left {
+        max-width: 456px;
+    }
+
+    .review__right {
+        max-width: calc(100% - 540px)
+    }
+
+}
+
+@media screen and (max-width: 1300px) {
+    .review {
+        margin-top: 90px;
+    }
+
+    .review__block {
+        margin-top: 60px;
+    }
+
+    .review-rev {
+        flex-direction: row;
+    }
+
+    .review__left {
+        max-width: 252px;
+    }
+
+    .review__right {
+        max-width: calc(100% - 270px)
+    }
+
+    .review__content::before {
+        display: none;
+    }
+
+    .review__content>blockquote {
+        padding-left: 0px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .review {
+        margin-top: 65px;
+    }
+
+    .review__block {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .review__left {
+        max-width: 50%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .review__right {
+        max-width: 100%;
+    }
+
+    .review__content::before {
+        top: 20px;
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+
+    .review__content>blockquote {
+        margin-top: 60px;
+    }
+
+    .review__content>blockquote>strong {
+        display: block;
+    }
+
+    .review__right>h5 {
+        display: none;
+    }
+
+    .review__content>blockquote {
+        font-size: 20px;
+    }
+
+    .review__left {
+        max-width: 100%;
+    }
+}
